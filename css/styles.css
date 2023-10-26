@@ -256,11 +256,26 @@ header h1 {
     justify-content: left;
     margin: 0 auto;
     max-width: 68em;
+    min-height: 100px; 
     padding: 2rem 2.5rem 0rem 2.5rem;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+@media (max-width: 1024px) {
+    .header-description {
+        margin-top: 13rem;
+        max-width: 68em;
+        padding: 9rem 2.5rem 0.5rem 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-description {
+        padding: 9rem 2.5rem 0.5rem 2.5rem;
+    }
 }
 
 @media screen and (max-width: 736px) {
@@ -280,12 +295,17 @@ header h1 {
     header h1 a{
         color: #019df4;
     }
+
+    .header-description {
+        margin-top: 8rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .header-description {
-        margin-top: 18rem;
+        margin-top: 8rem;
     }
+
 }
 
 
